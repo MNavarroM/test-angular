@@ -12,9 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { GamesComponent } from './games/games.component';
 import { StudiosComponent } from './studios/studios.component';
-import { PlatformsComponent } from './platforms/platforms.component';
 import { ExternoComponent } from './externo/externo.component';
-import { FormGameComponent } from './form-game/form-game.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -30,9 +28,7 @@ import { GameDetailsComponent } from './game-details/game-details.component';
     AppComponent,
     GamesComponent,
     StudiosComponent,
-    PlatformsComponent,
     ExternoComponent,
-    FormGameComponent,
     ListGamesStudioComponent,
     GameDetailsComponent
   ],

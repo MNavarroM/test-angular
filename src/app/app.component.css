@@ -2,3 +2,12 @@
   color:red;
   font-size: 30px;
 }
+
+mat-list-item{
+  margin-right: 10px;
+}
+
+mat-list-item:hover{
+  color:black;
+  cursor:pointer;
+}

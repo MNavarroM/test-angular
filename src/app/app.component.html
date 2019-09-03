@@ -1,34 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
+
 <nav>
-  <ul>
-    <li><a [routerLink]="['/']" [routerLinkActive]="['a']">Home</a></li>
-    <li><a [routerLink]="['/games']">Games</a></li>
-    <li><a [routerLink]="['/studios']">Studios</a></li>
-    <li><a [routerLink]="['/platforms']">Platforms</a></li>
-    <li><a [routerLink]="['/externo']">externo</a></li>
-    <li><a [routerLink]="['/addUser']">Add user</a></li>
-  </ul>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row  style="display: flex; flex-direction: row;" >
+      <mat-list-item [routerLink]="['/']">Inicio</mat-list-item>
+      <mat-list-item [routerLink]="['/games']">Juegos</mat-list-item>
+      <mat-list-item [routerLink]="['/studios']">Estudios</mat-list-item>
+      <mat-list-item [routerLink]="['/platforms']">Plataformas</mat-list-item>
+    </mat-toolbar-row>
+  </mat-toolbar>
 </nav>
 
-<mat-radio-group aria-label="Select an option">
-  <mat-radio-button value="1">Option 1</mat-radio-button>
-  <mat-radio-button value="2">Option 2</mat-radio-button>
-</mat-radio-group>
-
-
-
-
-<!--<div style="text-align:center" [ngStyle]="{ 'background' : 'grey', 'color' : 'red' }">
-  <h1 [ngClass]="['a']">
-    Hola {{ me }}!<br/>
-    {{ titulo }}
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<games></games>
-<studios></studios>
-<button (click)='hide()' >Hide</button>
-<platforms *ngIf="visible"></platforms>-->
 <router-outlet></router-outlet>
 
 
