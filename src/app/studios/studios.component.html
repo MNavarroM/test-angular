@@ -1,0 +1,8 @@
+<div *ngIf="studios">
+  <ul *ngFor="let studio of studios">
+    <li>{{studio.name}}</li>
+    <list-games-studio [studio]="studio"></list-games-studio>
+  </ul>
+</div>
+
+<!--<button (alertaEvent)="alertaName('Mariete Navarro')"> Send Name </button>-->

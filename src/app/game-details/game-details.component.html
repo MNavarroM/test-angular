@@ -1,0 +1,9 @@
+<div>
+  <h3>{{ game.title }}  - {{ game.price }}€ </h3>
+  <h5>{{ game.studio.name }}</h5>
+  <ul>
+    <li *ngFor="let genre of game.genre">
+      {{ genre }}
+    </li>
+  </ul>
+</div>

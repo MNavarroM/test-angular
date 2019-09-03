@@ -1,0 +1,10 @@
+<ng-container *ngIf="games.length; else noGames">
+  <ul>
+    <li *ngFor="let game of games">
+      {{game.title}}
+    </li>
+  </ul>
+</ng-container>
+<ng-template #noGames>
+  <h3>Este estudio aún no tiene juegos</h3>
+</ng-template>
