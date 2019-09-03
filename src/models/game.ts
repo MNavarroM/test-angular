@@ -10,7 +10,9 @@ export class Game{
         public id: number,
         public title: string,
         public price: number,
+        public description: string,
         public studio: Studio,
+        public cover: string,
         public genre: Array<string>){}
 
 

@@ -5,8 +5,8 @@ import { GameService } from '../../services/GameService';
 @Component({
   selector: 'games',
   templateUrl: './games.component.html',
-  providers: [GameService]
-  // styleUrls: ['./games.component.css']
+  providers: [GameService],
+   styleUrls: ['./games.component.css']
 })
 export class GamesComponent {
 
