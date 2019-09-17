@@ -5,8 +5,9 @@ import {Routes, RouterModule} from '@angular/router';
 // Componentes
 import {GamesComponent} from './games/games.component';
 import {StudiosComponent} from './studios/studios.component';
-import {ExternoComponent} from './externo/externo.component';
 import { GameDetailsComponent } from './game-details/game-details.component';
+import { RequestComponent } from './request/request.component';
+import { TestPostComponent } from './test-post/test-post.component';
 
 // Rutas
 
@@ -15,7 +16,8 @@ const appRoutes: Routes = [
   { path: 'games/:id', component: GameDetailsComponent },
   { path: 'studios', component: StudiosComponent },
   { path: 'studios/:nombre', component: StudiosComponent },
-  { path: 'externo/:id', component: ExternoComponent },
+  { path: 'users', component: RequestComponent },
+  { path: 'post', component: TestPostComponent },
 ];
 
 export const appRoutingProviders: any[] = [];

@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 import { NgModule } from '@angular/core';
@@ -12,14 +10,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { GamesComponent } from './games/games.component';
 import { StudiosComponent } from './studios/studios.component';
-import { ExternoComponent } from './externo/externo.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { MatRadioModule } from '@angular/material';
 import { SharedModule } from 'src/shared/shared.module';
 import { ListGamesStudioComponent } from './list-games-studio/list-games-studio.component';
 import { GameDetailsComponent } from './game-details/game-details.component';
+import { RequestComponent } from './request/request.component';
+import { TestPostComponent } from './test-post/test-post.component';
 
 
 
@@ -28,9 +24,10 @@ import { GameDetailsComponent } from './game-details/game-details.component';
     AppComponent,
     GamesComponent,
     StudiosComponent,
-    ExternoComponent,
     ListGamesStudioComponent,
-    GameDetailsComponent
+    GameDetailsComponent,
+    RequestComponent,
+    TestPostComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +35,8 @@ import { GameDetailsComponent } from './game-details/game-details.component';
     routing,
     HttpClientModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]

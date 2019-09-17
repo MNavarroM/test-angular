@@ -21,8 +21,8 @@ export class GamesComponent {
 
   }
 
-  removeGame(game: Game) {
-    this.games.splice(this.games.indexOf(game), 1);
+  deleteGame(game: Game): void {
+    this._gamesService.deleteGame(game);
   }
 
   alerta($event) {
@@ -32,7 +32,5 @@ export class GamesComponent {
   enterPress() {
     alert('ENTER PRESS');
   }
-
-
 
 }

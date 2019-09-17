@@ -1,0 +1,9 @@
+<form [formGroup]="formJSON">
+  <input type="number" disabled=true name="userId" formControlName="userId">
+  <input type="number" disabled=true name="id" formControlName="id">
+  <input type="text" name="title" formControlName="title">
+  <br />
+  <input type="body" name="body" formControlName="body">
+  <br />
+  <input type="submit" value="submit" (click)="post()" [disabled]="formJSON.invalid">
+</form>

@@ -24,5 +24,9 @@ export class GameService {
     return this.games;
   }
 
+  deleteGame(game: Game): void {
+    this.games.splice(this.games.indexOf(game), 1);
+  }
+
 }
 
